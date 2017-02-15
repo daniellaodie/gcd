@@ -3,7 +3,7 @@
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
+    motto: 'Hello gcd',
     userInfo: {}
   },
   //事件处理函数
@@ -11,6 +11,10 @@ Page({
     wx.navigateTo({
       url: '../logs/logs'
     })
+  },
+  //清除日志
+  bindLogTap: function() {
+    wx.setStorageSync('logs', [])
   },
   onLoad: function () {
     console.log('onLoad')
