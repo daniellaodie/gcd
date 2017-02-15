@@ -1,0 +1,33 @@
+.obj-register{
+    display: flex;
+    padding: 40rpx;
+    
+}
+
+.flex-wrp {
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+}
+.flex-item {
+    width: 100%;
+    height: 100%;
+    text-align:center;
+}
+
+.body-view {
+    margin-top: 20px;
+}
+
+.obj-form{
+    width: 80%;
+    height:400px;
+}
+.section__title{
+    margin-top: 5%;
+}
+.btn-area{
+    margin-top:50%;
+}

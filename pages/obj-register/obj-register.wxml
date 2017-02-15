@@ -1,0 +1,52 @@
+<view class="container obj-register">
+
+<form class = "obj-form" bindsubmit="formSubmit" bindreset="formReset">
+
+  <view class="nameSection">
+  <view class="section__title">名字：</view>
+    <input bindinput="bindNameInput" placeholder="芒果"/>
+  </view>
+
+  <view class="birthSection">
+    <view class="section__title">生日：</view>
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+      <view class="picker">
+        {{objBirthday}}
+      </view>
+    </picker>
+  </view>
+
+  <view>
+    <view class="section__title">重量：</view>
+    <!--
+  <view>{{integer}}.{{decimal}}kg</view>
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindWeightChange">
+    <picker-view-column>
+      <view wx:for="{{integer}}" style="line-height: 50px">{{item}}.</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{decimal}}" style="line-height: 50px">{{item}}kg</view>
+    </picker-view-column>
+  </picker-view>
+  -->
+  </view>
+
+  <view>
+    <view class="section__title">种类：</view>
+    <picker value="{{dogTypeIndex}}" range="{{dogTypeArray}}" bindchange="bindTypeChange">
+      <view class="picker">
+        {{dogTypeArray[dogTypeIndex]}}
+      </view>
+    </picker>
+  </view>
+
+
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>
+
+
+
+</view>

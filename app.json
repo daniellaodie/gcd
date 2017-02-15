@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/scan-code/scan-code",
+    "pages/obj-register/obj-register",
     "pages/index/index"
   ],
   "window":{
@@ -20,7 +21,7 @@
       "selectedIconPath": "img/icon_API_HL.png",
       "text": "扫一下"
     }, {
-      "pagePath": "pages/index/index",
+      "pagePath": "pages/obj-register/obj-register",
       "iconPath": "img/icon_component.png",
       "selectedIconPath": "img/icon_component_HL.png",
       "text": "我"
