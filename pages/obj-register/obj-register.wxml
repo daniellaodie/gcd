@@ -2,12 +2,18 @@
 
 <form class = "obj-form" bindsubmit="formSubmit" bindreset="formReset">
 
-  <view class="nameSection">
+
+
+  <view class="o-picture">
+      <image class="dp" style="background-color: #eeeeee;" mode="aspectFill" src="{{imgSrc}}"></image>
+  </view>
+
+  <view class="o-name section">
   <view class="section__title">名字：</view>
     <input bindinput="bindNameInput" placeholder="芒果"/>
   </view>
 
-  <view class="birthSection">
+  <view class="section o-birthday">
     <view class="section__title">生日：</view>
     <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
       <view class="picker">
@@ -16,7 +22,7 @@
     </picker>
   </view>
 
-  <view>
+  <view class="section o-weight">
     <view class="section__title">重量：</view>
     <!--
   <view>{{integer}}.{{decimal}}kg</view>
@@ -31,7 +37,7 @@
   -->
   </view>
 
-  <view>
+  <view class="section o-kinds">
     <view class="section__title">种类：</view>
     <picker value="{{dogTypeIndex}}" range="{{dogTypeArray}}" bindchange="bindTypeChange">
       <view class="picker">
@@ -42,8 +48,7 @@
 
 
   <view class="btn-area">
-    <button formType="submit">Submit</button>
-    <button formType="reset">Reset</button>
+    <button formType="submit">提交</button>
   </view>
 </form>
 

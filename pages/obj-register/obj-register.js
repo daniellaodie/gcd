@@ -7,7 +7,8 @@ Page({
     dogTypeIndex: 0,
     objName: 'dog',
     objBirthday: '',
-    objWeight: ''
+    objWeight: '',
+    imgSrc: '../../img/dog.jpg'
   },
   onLoad: function () {
     console.log('register page onLoad')
