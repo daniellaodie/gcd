@@ -1,4 +1,8 @@
 /**index.wxss**/
+.container{
+  padding: 40rpx;
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -17,5 +21,19 @@
 }
 
 .usermotto {
-  margin-top: 200px;
+  margin-top: 20px;
+}
+
+#dogsList{
+  margin-top: 10%;
+}
+
+
+/** 修改默认的navigator点击态 **/
+.navigator-hover {
+    color:blue;
+}
+/** 自定义其他点击态样式类 **/
+.other-navigator-hover {
+    color:red;
 }

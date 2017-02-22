@@ -3,7 +3,21 @@
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello 爱犬',
+    motto: '我的汪星人',
+    dogs: [
+      {
+        id: 1,
+        name: 'hanny'
+      },
+      {
+        id: 2,
+        name: 'wangcai'
+      },
+      {
+        id: 3,
+        name: 'lough'
+      }
+    ],
     userInfo: {}
   },
   //事件处理函数
@@ -26,5 +40,9 @@ Page({
         userInfo:userInfo
       })
     })
+    
+    /**
+     * 调用https请求，发送用户信息给服务器
+     */
   }
 })
